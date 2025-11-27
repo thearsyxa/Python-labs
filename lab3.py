@@ -1,9 +1,9 @@
 class Rectangle:
-    rectangle_quantity = 0
+    rectangles_quantity = 0
     def __init__(self, width, height):
         self.width = width
         self.height = height
-        Rectangle.rectangle_quantity +=1
+        Rectangle.rectangles_quantity +=1
         
     def area(self):
         return self.width*self.height
@@ -20,5 +20,5 @@ if __name__ == "__main__":
     print("Площадь:", rect.area())           
     print("Периметр:", rect.perimetr())    
     print("Это квадрат?", rect.is_square())  
-    print("Создано объектов:", Rectangle.rectangle_quantity)  
+    print("Создано объектов:", Rectangle.rectangles_quantity)  
 
